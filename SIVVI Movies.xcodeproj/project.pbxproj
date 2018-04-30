@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F86F9D32097534000F32ACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86F9D22097534000F32ACD /* AppDelegate.swift */; };
+		5F86F9D52097534000F32ACD /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86F9D42097534000F32ACD /* MasterViewController.swift */; };
+		5F86F9D72097534000F32ACD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86F9D62097534000F32ACD /* DetailViewController.swift */; };
+		5F86F9DA2097534000F32ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F86F9D82097534000F32ACD /* Main.storyboard */; };
+		5F86F9DC2097534200F32ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F86F9DB2097534200F32ACD /* Assets.xcassets */; };
+		5F86F9DF2097534200F32ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F86F9DD2097534200F32ACD /* LaunchScreen.storyboard */; };
+		5F86F9EA2097534200F32ACD /* SIVVI_MoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86F9E92097534200F32ACD /* SIVVI_MoviesTests.swift */; };
+		5F86F9F52097534200F32ACD /* SIVVI_MoviesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86F9F42097534200F32ACD /* SIVVI_MoviesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F86F9E62097534200F32ACD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F86F9C72097534000F32ACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F86F9CE2097534000F32ACD;
+			remoteInfo = "SIVVI Movies";
+		};
+		5F86F9F12097534200F32ACD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F86F9C72097534000F32ACD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F86F9CE2097534000F32ACD;
+			remoteInfo = "SIVVI Movies";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F86F9CF2097534000F32ACD /* SIVVI Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SIVVI Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F86F9D22097534000F32ACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5F86F9D42097534000F32ACD /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		5F86F9D62097534000F32ACD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5F86F9D92097534000F32ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F86F9DB2097534200F32ACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F86F9DE2097534200F32ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F86F9E02097534200F32ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F86F9E52097534200F32ACD /* SIVVI MoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SIVVI MoviesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F86F9E92097534200F32ACD /* SIVVI_MoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIVVI_MoviesTests.swift; sourceTree = "<group>"; };
+		5F86F9EB2097534200F32ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F86F9F02097534200F32ACD /* SIVVI MoviesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SIVVI MoviesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F86F9F42097534200F32ACD /* SIVVI_MoviesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIVVI_MoviesUITests.swift; sourceTree = "<group>"; };
+		5F86F9F62097534200F32ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F86F9CC2097534000F32ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F86F9E22097534200F32ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F86F9ED2097534200F32ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F86F9C62097534000F32ACD = {
+			isa = PBXGroup;
+			children = (
+				5F86F9D12097534000F32ACD /* SIVVI Movies */,
+				5F86F9E82097534200F32ACD /* SIVVI MoviesTests */,
+				5F86F9F32097534200F32ACD /* SIVVI MoviesUITests */,
+				5F86F9D02097534000F32ACD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F86F9D02097534000F32ACD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F86F9CF2097534000F32ACD /* SIVVI Movies.app */,
+				5F86F9E52097534200F32ACD /* SIVVI MoviesTests.xctest */,
+				5F86F9F02097534200F32ACD /* SIVVI MoviesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F86F9D12097534000F32ACD /* SIVVI Movies */ = {
+			isa = PBXGroup;
+			children = (
+				5F86F9D22097534000F32ACD /* AppDelegate.swift */,
+				5F86F9D42097534000F32ACD /* MasterViewController.swift */,
+				5F86F9D62097534000F32ACD /* DetailViewController.swift */,
+				5F86F9D82097534000F32ACD /* Main.storyboard */,
+				5F86F9DB2097534200F32ACD /* Assets.xcassets */,
+				5F86F9DD2097534200F32ACD /* LaunchScreen.storyboard */,
+				5F86F9E02097534200F32ACD /* Info.plist */,
+			);
+			path = "SIVVI Movies";
+			sourceTree = "<group>";
+		};
+		5F86F9E82097534200F32ACD /* SIVVI MoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F86F9E92097534200F32ACD /* SIVVI_MoviesTests.swift */,
+				5F86F9EB2097534200F32ACD /* Info.plist */,
+			);
+			path = "SIVVI MoviesTests";
+			sourceTree = "<group>";
+		};
+		5F86F9F32097534200F32ACD /* SIVVI MoviesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F86F9F42097534200F32ACD /* SIVVI_MoviesUITests.swift */,
+				5F86F9F62097534200F32ACD /* Info.plist */,
+			);
+			path = "SIVVI MoviesUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F86F9CE2097534000F32ACD /* SIVVI Movies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F86F9F92097534200F32ACD /* Build configuration list for PBXNativeTarget "SIVVI Movies" */;
+			buildPhases = (
+				5F86F9CB2097534000F32ACD /* Sources */,
+				5F86F9CC2097534000F32ACD /* Frameworks */,
+				5F86F9CD2097534000F32ACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SIVVI Movies";
+			productName = "SIVVI Movies";
+			productReference = 5F86F9CF2097534000F32ACD /* SIVVI Movies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F86F9E42097534200F32ACD /* SIVVI MoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F86F9FC2097534200F32ACD /* Build configuration list for PBXNativeTarget "SIVVI MoviesTests" */;
+			buildPhases = (
+				5F86F9E12097534200F32ACD /* Sources */,
+				5F86F9E22097534200F32ACD /* Frameworks */,
+				5F86F9E32097534200F32ACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F86F9E72097534200F32ACD /* PBXTargetDependency */,
+			);
+			name = "SIVVI MoviesTests";
+			productName = "SIVVI MoviesTests";
+			productReference = 5F86F9E52097534200F32ACD /* SIVVI MoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F86F9EF2097534200F32ACD /* SIVVI MoviesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F86F9FF2097534200F32ACD /* Build configuration list for PBXNativeTarget "SIVVI MoviesUITests" */;
+			buildPhases = (
+				5F86F9EC2097534200F32ACD /* Sources */,
+				5F86F9ED2097534200F32ACD /* Frameworks */,
+				5F86F9EE2097534200F32ACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F86F9F22097534200F32ACD /* PBXTargetDependency */,
+			);
+			name = "SIVVI MoviesUITests";
+			productName = "SIVVI MoviesUITests";
+			productReference = 5F86F9F02097534200F32ACD /* SIVVI MoviesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F86F9C72097534000F32ACD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Zouhair;
+				TargetAttributes = {
+					5F86F9CE2097534000F32ACD = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					5F86F9E42097534200F32ACD = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 5F86F9CE2097534000F32ACD;
+					};
+					5F86F9EF2097534200F32ACD = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 5F86F9CE2097534000F32ACD;
+					};
+				};
+			};
+			buildConfigurationList = 5F86F9CA2097534000F32ACD /* Build configuration list for PBXProject "SIVVI Movies" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F86F9C62097534000F32ACD;
+			productRefGroup = 5F86F9D02097534000F32ACD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F86F9CE2097534000F32ACD /* SIVVI Movies */,
+				5F86F9E42097534200F32ACD /* SIVVI MoviesTests */,
+				5F86F9EF2097534200F32ACD /* SIVVI MoviesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F86F9CD2097534000F32ACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F86F9DF2097534200F32ACD /* LaunchScreen.storyboard in Resources */,
+				5F86F9DC2097534200F32ACD /* Assets.xcassets in Resources */,
+				5F86F9DA2097534000F32ACD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F86F9E32097534200F32ACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F86F9EE2097534200F32ACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F86F9CB2097534000F32ACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F86F9D72097534000F32ACD /* DetailViewController.swift in Sources */,
+				5F86F9D52097534000F32ACD /* MasterViewController.swift in Sources */,
+				5F86F9D32097534000F32ACD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F86F9E12097534200F32ACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F86F9EA2097534200F32ACD /* SIVVI_MoviesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F86F9EC2097534200F32ACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F86F9F52097534200F32ACD /* SIVVI_MoviesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F86F9E72097534200F32ACD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F86F9CE2097534000F32ACD /* SIVVI Movies */;
+			targetProxy = 5F86F9E62097534200F32ACD /* PBXContainerItemProxy */;
+		};
+		5F86F9F22097534200F32ACD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F86F9CE2097534000F32ACD /* SIVVI Movies */;
+			targetProxy = 5F86F9F12097534200F32ACD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F86F9D82097534000F32ACD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F86F9D92097534000F32ACD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F86F9DD2097534200F32ACD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F86F9DE2097534200F32ACD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F86F9F72097534200F32ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5F86F9F82097534200F32ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F86F9FA2097534200F32ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSAPQ7K955;
+				INFOPLIST_FILE = "SIVVI Movies/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zouhair.SIVVI-Movies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5F86F9FB2097534200F32ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSAPQ7K955;
+				INFOPLIST_FILE = "SIVVI Movies/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zouhair.SIVVI-Movies";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5F86F9FD2097534200F32ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSAPQ7K955;
+				INFOPLIST_FILE = "SIVVI MoviesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zouhair.SIVVI-MoviesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SIVVI Movies.app/SIVVI Movies";
+			};
+			name = Debug;
+		};
+		5F86F9FE2097534200F32ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSAPQ7K955;
+				INFOPLIST_FILE = "SIVVI MoviesTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zouhair.SIVVI-MoviesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SIVVI Movies.app/SIVVI Movies";
+			};
+			name = Release;
+		};
+		5F86FA002097534200F32ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSAPQ7K955;
+				INFOPLIST_FILE = "SIVVI MoviesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zouhair.SIVVI-MoviesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SIVVI Movies";
+			};
+			name = Debug;
+		};
+		5F86FA012097534200F32ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TSAPQ7K955;
+				INFOPLIST_FILE = "SIVVI MoviesUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "zouhair.SIVVI-MoviesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SIVVI Movies";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F86F9CA2097534000F32ACD /* Build configuration list for PBXProject "SIVVI Movies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F86F9F72097534200F32ACD /* Debug */,
+				5F86F9F82097534200F32ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F86F9F92097534200F32ACD /* Build configuration list for PBXNativeTarget "SIVVI Movies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F86F9FA2097534200F32ACD /* Debug */,
+				5F86F9FB2097534200F32ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F86F9FC2097534200F32ACD /* Build configuration list for PBXNativeTarget "SIVVI MoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F86F9FD2097534200F32ACD /* Debug */,
+				5F86F9FE2097534200F32ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F86F9FF2097534200F32ACD /* Build configuration list for PBXNativeTarget "SIVVI MoviesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F86FA002097534200F32ACD /* Debug */,
+				5F86FA012097534200F32ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F86F9C72097534000F32ACD /* Project object */;
+}
