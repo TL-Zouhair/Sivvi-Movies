@@ -10,6 +10,7 @@ target 'SIVVI Movies' do
    	 pod 'RxCocoa',    '~> 4.0'
 	 pod 'ObjectMapper', '~> 3.0.0'
      pod 'Moya'
+     pod 'Kingfisher', '~> 4.0'
 	
 
   target 'SIVVI MoviesTests' do

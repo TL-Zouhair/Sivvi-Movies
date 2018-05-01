@@ -8,14 +8,18 @@
 
 import Foundation
 import ObjectMapper
+import RxSwift
 
 class MovieSection: Mappable {
+
+    var movies:[Movie] = [Movie]()
+    var totalPages:Int = 0
+    var totalResults:Int = 0
+    var refresh = PublishSubject<()>()
     
-    var movies:[Movie]?
-    var totalPages:Int?
-    var totalResults:Int?
-    
-    required init?(map: Map) {}
+    required init?(map: Map) {
+    }
+    required init(){}
     
     func mapping(map: Map) {
         movies <- map["results"]
@@ -24,10 +28,6 @@ class MovieSection: Mappable {
     }
     
     func count() -> Int {
-        guard let movies = movies else {
-            return 0
-        }
-        
         return movies.count
     }
 }

@@ -14,7 +14,7 @@ class SettingsConstants {
     static let endPoint = "/3"
     static let stagingStringBaseUrl = "https://api.themoviedb.org"
     static let prodStringBaseUrl = "https://api.themoviedb.org"
-    
+    static let imagesStringBaseUrl = "https://image.tmdb.org/t/p/w200/"
     static let apiKey = "92902f3b6e447dc1b5ae67621de4db57"
     
     static var urlString:String {
@@ -25,6 +25,10 @@ class SettingsConstants {
     
     static var baseURL : URL {
         return URL(string: SettingsConstants.urlString)!
+    }
+    
+    static var imagesBaseURL : URL {
+        return URL(string: SettingsConstants.imagesStringBaseUrl)!
     }
     
     static var baseUrlString : String {

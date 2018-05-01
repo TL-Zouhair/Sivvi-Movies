@@ -23,6 +23,8 @@
 		5F86FA112097A03200F32ACD /* MoviesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86FA102097A03200F32ACD /* MoviesProvider.swift */; };
 		5F86FA142097A25800F32ACD /* SettingsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86FA132097A25800F32ACD /* SettingsConstants.swift */; };
 		5F86FA172097A43E00F32ACD /* MoviesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86FA162097A43E00F32ACD /* MoviesDataManager.swift */; };
+		5F86FA1B20985CB000F32ACD /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86FA1920985CB000F32ACD /* MovieCollectionViewCell.swift */; };
+		5F86FA1C20985CB000F32ACD /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F86FA1A20985CB000F32ACD /* MovieCollectionViewCell.xib */; };
 		60B1C3AA38F79D184019CD6A /* Pods_SIVVI_MoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4DB3B0426A1282E842EBD5 /* Pods_SIVVI_MoviesTests.framework */; };
 		C108187DE72DA5A4ED6B185B /* Pods_SIVVI_MoviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216ABCECBAD354B2B91AA98A /* Pods_SIVVI_MoviesUITests.framework */; };
 		DEC4966E70ADBB867ADA1470 /* Pods_SIVVI_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B88F886831782069D708F68 /* Pods_SIVVI_Movies.framework */; };
@@ -74,6 +76,8 @@
 		5F86FA102097A03200F32ACD /* MoviesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesProvider.swift; sourceTree = "<group>"; };
 		5F86FA132097A25800F32ACD /* SettingsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConstants.swift; sourceTree = "<group>"; };
 		5F86FA162097A43E00F32ACD /* MoviesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDataManager.swift; sourceTree = "<group>"; };
+		5F86FA1920985CB000F32ACD /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
+		5F86FA1A20985CB000F32ACD /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
 		AC04195E1980FF631EC1341C /* Pods-SIVVI Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIVVI Movies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SIVVI Movies/Pods-SIVVI Movies.debug.xcconfig"; sourceTree = "<group>"; };
 		AD94945E846BAAE7A3427C5C /* Pods-SIVVI MoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIVVI MoviesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SIVVI MoviesTests/Pods-SIVVI MoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F14113E3BD974CD318BB5D65 /* Pods-SIVVI MoviesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIVVI MoviesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SIVVI MoviesUITests/Pods-SIVVI MoviesUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 		5F86FA02209753B300F32ACD /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5F86FA1820985C8B00F32ACD /* Cells */,
 				5F86FA05209755FF00F32ACD /* HomeViewModel.swift */,
 				5F86FA072097560C00F32ACD /* HomeViewController.swift */,
 				5F86FA0B20979D9C00F32ACD /* Movie.swift */,
@@ -222,6 +227,15 @@
 				5F86FA162097A43E00F32ACD /* MoviesDataManager.swift */,
 			);
 			path = DataManager;
+			sourceTree = "<group>";
+		};
+		5F86FA1820985C8B00F32ACD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5F86FA1920985CB000F32ACD /* MovieCollectionViewCell.swift */,
+				5F86FA1A20985CB000F32ACD /* MovieCollectionViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +304,9 @@
 		5F86F9C72097534000F32ACD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					2,
+				);
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = Zouhair;
@@ -332,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F86FA1C20985CB000F32ACD /* MovieCollectionViewCell.xib in Resources */,
 				5F86F9DF2097534200F32ACD /* LaunchScreen.storyboard in Resources */,
 				5F86F9DC2097534200F32ACD /* Assets.xcassets in Resources */,
 				5F86F9DA2097534000F32ACD /* Main.storyboard in Resources */,
@@ -400,6 +418,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SIVVI Movies/Pods-SIVVI Movies-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -409,6 +428,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -453,6 +473,7 @@
 				5F86F9D32097534000F32ACD /* AppDelegate.swift in Sources */,
 				5F86FA06209755FF00F32ACD /* HomeViewModel.swift in Sources */,
 				5F86FA0E20979DDE00F32ACD /* MovieSection.swift in Sources */,
+				5F86FA1B20985CB000F32ACD /* MovieCollectionViewCell.swift in Sources */,
 				5F86FA112097A03200F32ACD /* MoviesProvider.swift in Sources */,
 				5F86FA142097A25800F32ACD /* SettingsConstants.swift in Sources */,
 			);

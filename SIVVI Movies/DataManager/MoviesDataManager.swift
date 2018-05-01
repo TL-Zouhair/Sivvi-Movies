@@ -13,40 +13,23 @@ import Moya
 import ObjectMapper
 
 class MoviesDataManager {
-    static var instance = MoviesDataManager()
-    
-    init() {
-        setApiKey(token: SettingsConstants.apiKey)
-    }
-    
     var moviesProvider = MoyaProvider<MoviesProvider>()
-    
-    func setApiKey(token:String) {
-        let authPlugin = AccessTokenPlugin(tokenClosure: token)
-        if SettingsConstants.isProd {
-            moviesProvider = MoyaProvider<MoviesProvider>(plugins:[authPlugin])
-        }else{
-            moviesProvider = MoyaProvider<MoviesProvider>(plugins:[authPlugin,NetworkLoggerPlugin(verbose: true)])
-        }
-    }
 }
 
 
 extension MoviesDataManager {
     
-    /// Submit an order to the backend
+    /// get movies fro network filtering by criteria
     ///
     /// - Parameters:
-    ///   - description: a String that contains the content of additional notes
-    ///   - serviceId: id of the selected service
-    ///   - tags: conctaed string of ids of selected tags (eg:1,2,3)
+    ///   - page: movie page
+    ///   - sort_by: filter
     ///   - completion: callback
-    
     func getMovies(page:Int,sort_by:String,completion:@escaping (_ success:Bool,_ reponse:MovieSection?,_ error:NSError?)-> Void) {
         moviesProvider.request(.fetchMoviesList(page: page, sort_by: sort_by)) { (result) in
             switch result {
             case .success(let data):
-                do {
+                do {    
                     let orderResponseJson = try JSONSerialization.jsonObject(with: data.data, options: JSONSerialization.ReadingOptions.allowFragments) as! [String:Any]
                     
 
