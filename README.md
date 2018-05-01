@@ -1,6 +1,5 @@
 # Sivvi-Movies
 
-![alt text](https://raw.githubusercontent.com/TL-Zouhair/Sivvi-Movies/master/ScreenShot/1.png | width=200)
+<img src="https://raw.githubusercontent.com/TL-Zouhair/Sivvi-Movies/master/ScreenShot/1.png" width="40%">
 
-
-![alt text](https://raw.githubusercontent.com/TL-Zouhair/Sivvi-Movies/master/ScreenShot/2.png | width=200)
+<img src="https://raw.githubusercontent.com/TL-Zouhair/Sivvi-Movies/master/ScreenShot/1.png" width="40%">
