@@ -19,31 +19,22 @@
                 <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euf-oI-3xZ">
-                        <rect key="frame" x="13" y="49" width="185" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rm3-En-s8a">
                         <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                        <color key="backgroundColor" white="0.97368706599999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </imageView>
                 </subviews>
             </view>
-            <color key="backgroundColor" red="0.94703030590000004" green="0.74272471669999995" blue="0.29392173890000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="rm3-En-s8a" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="993-xl-lmU"/>
                 <constraint firstAttribute="trailing" secondItem="rm3-En-s8a" secondAttribute="trailing" id="Vce-1h-gsf"/>
                 <constraint firstItem="rm3-En-s8a" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hXM-cI-Jo7"/>
                 <constraint firstAttribute="bottom" secondItem="rm3-En-s8a" secondAttribute="bottom" id="pbj-m4-fWU"/>
-                <constraint firstItem="euf-oI-3xZ" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="vPI-aH-sHX"/>
-                <constraint firstItem="euf-oI-3xZ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="yGL-Ow-nZl"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="211" height="119"/>
             <connections>
                 <outlet property="image" destination="rm3-En-s8a" id="Xf2-m5-rI7"/>
-                <outlet property="title" destination="euf-oI-3xZ" id="zG3-t5-Zkb"/>
             </connections>
             <point key="canvasLocation" x="114" y="124"/>
         </collectionViewCell>

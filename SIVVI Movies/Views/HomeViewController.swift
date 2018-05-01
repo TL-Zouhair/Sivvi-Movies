@@ -25,6 +25,8 @@ class HomeViewController : UIViewController {
     
     override func viewDidLoad() {
         
+        self.title = "SiVVI Movies"
+        
         popularCollectionView.register(UINib(nibName: "MovieCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "movieCellHome")
         topRatedCollectionView.register(UINib(nibName: "MovieCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "movieCellHome")
         revenueCollectionView.register(UINib(nibName: "MovieCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "movieCellHome")
@@ -47,7 +49,9 @@ class HomeViewController : UIViewController {
         
         popularCollectionView.rx.itemSelected.asObservable().bind { [weak self](indexPath) in
             if let movie = self?.homeViewModel.popularSection.movies[indexPath.row] {
-                print("" + movie.title!)
+                let detail = self?.storyboard?.instantiateViewController(withIdentifier: "detail") as! DetailViewController
+                detail.viewModel = DetailViewModel(movie: movie)
+                self?.navigationController?.pushViewController(detail, animated: true)
             }
         }.disposed(by: disposeBag)
         
@@ -67,7 +71,9 @@ class HomeViewController : UIViewController {
         
         topRatedCollectionView.rx.itemSelected.asObservable().bind { [weak self](indexPath) in
             if let movie = self?.homeViewModel.topRatedSection.movies[indexPath.row] {
-                print("" + movie.title!)
+                let detail = self?.storyboard?.instantiateViewController(withIdentifier: "detail") as! DetailViewController
+                detail.viewModel = DetailViewModel(movie: movie)
+                self?.navigationController?.pushViewController(detail, animated: true)
             }
             }.disposed(by: disposeBag)
         topRatedCollectionView.dataSource = self
@@ -86,7 +92,9 @@ class HomeViewController : UIViewController {
         
         revenueCollectionView.rx.itemSelected.asObservable().bind { [weak self](indexPath) in
             if let movie = self?.homeViewModel.revenueSection.movies[indexPath.row] {
-                print("" + movie.title!)
+                let detail = self?.storyboard?.instantiateViewController(withIdentifier: "detail") as! DetailViewController
+                detail.viewModel = DetailViewModel(movie: movie)
+                self?.navigationController?.pushViewController(detail, animated: true)
             }
             }.disposed(by: disposeBag)
         revenueCollectionView.dataSource = self
@@ -105,7 +113,9 @@ class HomeViewController : UIViewController {
         
         latestCollectionView.rx.itemSelected.asObservable().bind { [weak self](indexPath) in
             if let movie = self?.homeViewModel.latestSection.movies[indexPath.row] {
-                print("" + movie.title!)
+                let detail = self?.storyboard?.instantiateViewController(withIdentifier: "detail") as! DetailViewController
+                detail.viewModel = DetailViewModel(movie: movie)
+                self?.navigationController?.pushViewController(detail, animated: true)
             }
             }.disposed(by: disposeBag)
         latestCollectionView.dataSource = self
@@ -122,11 +132,14 @@ class HomeViewController : UIViewController {
             }
             }.disposed(by: disposeBag)
         
-        bestRatedCollectionView.rx.itemSelected.asObservable().bind { [weak self](indexPath) in
+        bestRatedCollectionView.rx.itemSelected.asObservable().bind { [weak self] (indexPath) in
             if let movie = self?.homeViewModel.bestRatedSection.movies[indexPath.row] {
-                print("" + movie.title!)
+                let detail = self?.storyboard?.instantiateViewController(withIdentifier: "detail") as! DetailViewController
+                detail.viewModel = DetailViewModel(movie: movie)
+                self?.navigationController?.pushViewController(detail, animated: true)
             }
             }.disposed(by: disposeBag)
+        
         bestRatedCollectionView.dataSource = self
     }
 }

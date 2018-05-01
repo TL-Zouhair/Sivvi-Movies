@@ -30,10 +30,11 @@ class MovieCollectionViewCell: UICollectionViewCell {
     }
     
     func setUp(movie:Movie) {
-        title.text = movie.title
+        //title.text = movie.title
         if let poster = movie.posterPath {
             var url = SettingsConstants.imagesBaseURL
             url = url.appendingPathComponent(poster)
+            image.kf.indicatorType = .activity
             image.kf.setImage(with: url)
         }
         

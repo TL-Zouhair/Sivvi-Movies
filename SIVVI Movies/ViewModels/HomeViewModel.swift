@@ -12,7 +12,7 @@ import ObjectMapper
 
 enum Sections : String {
     case Popular = "popularity.desc"
-    case Latest = "release_date.desc"
+    case Latest = "latest.desc"
     case Revenue = "revenue.desc"
     case VoteAverage = "vote_average.desc"
     case VoteCount = "vote_count.desc"
@@ -74,6 +74,12 @@ class HomeViewModel : NSObject {
     }
     
     
+    /// Get Section by page number and filter
+    ///
+    /// - Parameters:
+    ///   - page: page number - pagination
+    ///   - sort_by: filter See enum Sections
+    ///   - section: section storage
     func getSections(page: Int, sort_by: Sections,section:MovieSection) {
         //call the API Manager
         dataManager.getMovies(page: page, sort_by: sort_by.rawValue) { (success, _moviesSection, error) in
@@ -82,10 +88,10 @@ class HomeViewModel : NSObject {
                     section.movies.append(contentsOf: mvs)
                     section.refresh.onNext(())
                 }else {
-                    
+                    //showError.onNext("")
                 }
             } else {
-                //Show error
+                //showError.onNext("")
             }
         }
     }

@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F86F9D32097534000F32ACD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86F9D22097534000F32ACD /* AppDelegate.swift */; };
-		5F86F9D52097534000F32ACD /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86F9D42097534000F32ACD /* MasterViewController.swift */; };
 		5F86F9D72097534000F32ACD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86F9D62097534000F32ACD /* DetailViewController.swift */; };
-		5F86F9DA2097534000F32ACD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F86F9D82097534000F32ACD /* Main.storyboard */; };
 		5F86F9DC2097534200F32ACD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F86F9DB2097534200F32ACD /* Assets.xcassets */; };
 		5F86F9DF2097534200F32ACD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F86F9DD2097534200F32ACD /* LaunchScreen.storyboard */; };
 		5F86F9EA2097534200F32ACD /* SIVVI_MoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86F9E92097534200F32ACD /* SIVVI_MoviesTests.swift */; };
@@ -25,6 +23,7 @@
 		5F86FA172097A43E00F32ACD /* MoviesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86FA162097A43E00F32ACD /* MoviesDataManager.swift */; };
 		5F86FA1B20985CB000F32ACD /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86FA1920985CB000F32ACD /* MovieCollectionViewCell.swift */; };
 		5F86FA1C20985CB000F32ACD /* MovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F86FA1A20985CB000F32ACD /* MovieCollectionViewCell.xib */; };
+		5F86FA222098A2AA00F32ACD /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F86FA212098A2AA00F32ACD /* DetailViewModel.swift */; };
 		60B1C3AA38F79D184019CD6A /* Pods_SIVVI_MoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E4DB3B0426A1282E842EBD5 /* Pods_SIVVI_MoviesTests.framework */; };
 		C108187DE72DA5A4ED6B185B /* Pods_SIVVI_MoviesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216ABCECBAD354B2B91AA98A /* Pods_SIVVI_MoviesUITests.framework */; };
 		DEC4966E70ADBB867ADA1470 /* Pods_SIVVI_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B88F886831782069D708F68 /* Pods_SIVVI_Movies.framework */; };
@@ -56,9 +55,7 @@
 		5E471524F0F064F89DF0E2E9 /* Pods-SIVVI MoviesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIVVI MoviesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SIVVI MoviesUITests/Pods-SIVVI MoviesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5F86F9CF2097534000F32ACD /* SIVVI Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SIVVI Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F86F9D22097534000F32ACD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F86F9D42097534000F32ACD /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		5F86F9D62097534000F32ACD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		5F86F9D92097534000F32ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F86F9DB2097534200F32ACD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F86F9DE2097534200F32ACD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F86F9E02097534200F32ACD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,6 +75,7 @@
 		5F86FA162097A43E00F32ACD /* MoviesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDataManager.swift; sourceTree = "<group>"; };
 		5F86FA1920985CB000F32ACD /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		5F86FA1A20985CB000F32ACD /* MovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCollectionViewCell.xib; sourceTree = "<group>"; };
+		5F86FA212098A2AA00F32ACD /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		AC04195E1980FF631EC1341C /* Pods-SIVVI Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIVVI Movies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SIVVI Movies/Pods-SIVVI Movies.debug.xcconfig"; sourceTree = "<group>"; };
 		AD94945E846BAAE7A3427C5C /* Pods-SIVVI MoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIVVI MoviesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SIVVI MoviesTests/Pods-SIVVI MoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F14113E3BD974CD318BB5D65 /* Pods-SIVVI MoviesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SIVVI MoviesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SIVVI MoviesUITests/Pods-SIVVI MoviesUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -159,18 +157,17 @@
 		5F86F9D12097534000F32ACD /* SIVVI Movies */ = {
 			isa = PBXGroup;
 			children = (
+				5F86FA1F2098A21000F32ACD /* ViewModels */,
+				5F86FA1E2098A20200F32ACD /* Models */,
+				5F86FA1D2098A1D900F32ACD /* Views */,
 				5F86FA152097A42D00F32ACD /* DataManager */,
 				5F86FA122097A23F00F32ACD /* Extras */,
-				5F86FA0F20979DF800F32ACD /* MoviesAPI */,
-				5F86FA02209753B300F32ACD /* Home */,
+				5F86FA0F20979DF800F32ACD /* Movies API */,
+				5F86FA02209753B300F32ACD /* UI */,
 				5F86F9D22097534000F32ACD /* AppDelegate.swift */,
-				5F86F9D42097534000F32ACD /* MasterViewController.swift */,
-				5F86F9D62097534000F32ACD /* DetailViewController.swift */,
-				5F86F9D82097534000F32ACD /* Main.storyboard */,
 				5F86F9DB2097534200F32ACD /* Assets.xcassets */,
 				5F86F9DD2097534200F32ACD /* LaunchScreen.storyboard */,
 				5F86F9E02097534200F32ACD /* Info.plist */,
-				5F86FA092097578200F32ACD /* Home.storyboard */,
 			);
 			path = "SIVVI Movies";
 			sourceTree = "<group>";
@@ -193,24 +190,21 @@
 			path = "SIVVI MoviesUITests";
 			sourceTree = "<group>";
 		};
-		5F86FA02209753B300F32ACD /* Home */ = {
+		5F86FA02209753B300F32ACD /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				5F86FA092097578200F32ACD /* Home.storyboard */,
 				5F86FA1820985C8B00F32ACD /* Cells */,
-				5F86FA05209755FF00F32ACD /* HomeViewModel.swift */,
-				5F86FA072097560C00F32ACD /* HomeViewController.swift */,
-				5F86FA0B20979D9C00F32ACD /* Movie.swift */,
-				5F86FA0D20979DDE00F32ACD /* MovieSection.swift */,
 			);
-			path = Home;
+			path = UI;
 			sourceTree = "<group>";
 		};
-		5F86FA0F20979DF800F32ACD /* MoviesAPI */ = {
+		5F86FA0F20979DF800F32ACD /* Movies API */ = {
 			isa = PBXGroup;
 			children = (
 				5F86FA102097A03200F32ACD /* MoviesProvider.swift */,
 			);
-			path = MoviesAPI;
+			path = "Movies API";
 			sourceTree = "<group>";
 		};
 		5F86FA122097A23F00F32ACD /* Extras */ = {
@@ -236,6 +230,33 @@
 				5F86FA1A20985CB000F32ACD /* MovieCollectionViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		5F86FA1D2098A1D900F32ACD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F86F9D62097534000F32ACD /* DetailViewController.swift */,
+				5F86FA072097560C00F32ACD /* HomeViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5F86FA1E2098A20200F32ACD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F86FA0B20979D9C00F32ACD /* Movie.swift */,
+				5F86FA0D20979DDE00F32ACD /* MovieSection.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5F86FA1F2098A21000F32ACD /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5F86FA05209755FF00F32ACD /* HomeViewModel.swift */,
+				5F86FA212098A2AA00F32ACD /* DetailViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,7 +373,6 @@
 				5F86FA1C20985CB000F32ACD /* MovieCollectionViewCell.xib in Resources */,
 				5F86F9DF2097534200F32ACD /* LaunchScreen.storyboard in Resources */,
 				5F86F9DC2097534200F32ACD /* Assets.xcassets in Resources */,
-				5F86F9DA2097534000F32ACD /* Main.storyboard in Resources */,
 				5F86FA0A2097578200F32ACD /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,21 +438,25 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SIVVI Movies/Pods-SIVVI Movies-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,13 +492,13 @@
 				5F86FA082097560C00F32ACD /* HomeViewController.swift in Sources */,
 				5F86F9D72097534000F32ACD /* DetailViewController.swift in Sources */,
 				5F86FA0C20979D9C00F32ACD /* Movie.swift in Sources */,
-				5F86F9D52097534000F32ACD /* MasterViewController.swift in Sources */,
 				5F86FA172097A43E00F32ACD /* MoviesDataManager.swift in Sources */,
 				5F86F9D32097534000F32ACD /* AppDelegate.swift in Sources */,
 				5F86FA06209755FF00F32ACD /* HomeViewModel.swift in Sources */,
 				5F86FA0E20979DDE00F32ACD /* MovieSection.swift in Sources */,
 				5F86FA1B20985CB000F32ACD /* MovieCollectionViewCell.swift in Sources */,
 				5F86FA112097A03200F32ACD /* MoviesProvider.swift in Sources */,
+				5F86FA222098A2AA00F32ACD /* DetailViewModel.swift in Sources */,
 				5F86FA142097A25800F32ACD /* SettingsConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,14 +535,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5F86F9D82097534000F32ACD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5F86F9D92097534000F32ACD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5F86F9DD2097534200F32ACD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -652,10 +668,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSAPQ7K955;
 				INFOPLIST_FILE = "SIVVI Movies/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zouhair.SIVVI-Movies";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -671,10 +684,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSAPQ7K955;
 				INFOPLIST_FILE = "SIVVI Movies/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zouhair.SIVVI-Movies";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -691,11 +701,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSAPQ7K955;
 				INFOPLIST_FILE = "SIVVI MoviesTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zouhair.SIVVI-MoviesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -713,11 +719,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSAPQ7K955;
 				INFOPLIST_FILE = "SIVVI MoviesTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zouhair.SIVVI-MoviesTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -734,11 +736,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSAPQ7K955;
 				INFOPLIST_FILE = "SIVVI MoviesUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zouhair.SIVVI-MoviesUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -755,11 +753,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TSAPQ7K955;
 				INFOPLIST_FILE = "SIVVI MoviesUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zouhair.SIVVI-MoviesUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
