@@ -1,0 +1,6 @@
+framework module Pods_SIVVI_Movies {
+  umbrella header "Pods-SIVVI Movies-umbrella.h"
+
+  export *
+  module * { export * }
+}
